@@ -1,0 +1,29 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu ul{
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.submenu{
+    display: flex;
+}
+
+.submenu>div>ul {
+    list-style: none;
+}
+.submenu>div>ul>li{
+    margin-right: 0px;
+}

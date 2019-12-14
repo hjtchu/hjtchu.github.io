@@ -1,0 +1,64 @@
+.main{
+    height: 1000px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    /* height: 100%; */
+    width: auto;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.sanpham{
+    display: flex;
+    width: 75%;
+    margin-left: 300px;
+    margin-top: 10px;
+    }
+.sanpham img{
+    height: 100%;
+    width: 33%;
+    align-items: baseline;
+    }
+#menu{
+    position: absolute;
+    width: 250px;
+    box-sizing: border-box;
+}
+#menu ul {
+    background: #8AD385;
+    width: 250px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+  #menu li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+  }
+  #menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+  }
+  #menu li:hover {
+    background: #CDE2CD;
+  }
+  .home {
+    color: yellow;
+    font-size: 50px;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+}

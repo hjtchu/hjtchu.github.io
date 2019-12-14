@@ -1,0 +1,20 @@
+.container{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+
+
+.red{
+    background-color: red;
+    /* grid-row-start: 1;
+    grid-row-end: 6; */
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}

@@ -1,0 +1,25 @@
+.parent {
+    border: 1px solid white;
+    width: 900px;
+}
+.div1 {
+    width: 100vw;
+    border: 1px solid black;
+    text-align: center;
+}
+.div2 {
+    border: 1px solid black;
+    text-align: center;
+}
+.div3 {
+    border: 1px solid black;
+    text-align: center;
+}
+/* img {
+    width: 33%;
+} */
+#logo {
+    transform: rotate(-90deg);
+    width: fit-content;
+    /* width: 50% !important; */
+}

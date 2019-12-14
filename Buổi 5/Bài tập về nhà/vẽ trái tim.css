@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: relative;
+
+    animation: tim 5s infinite;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    top: -50%;
+    border-radius: 50%;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    left: -50%;
+    border-radius: 50%;
+}
+
+
+@keyframes tim {
+    0% {
+        transform: scale(1) rotate(45deg);
+    }
+    /* 50% {
+        transform: scale(1.5);
+    } */
+   50% {
+        transform: scale(2) rotate(45deg);
+    }
+    100% {
+        transform: scale(1) rotate(45deg);
+    }
+}

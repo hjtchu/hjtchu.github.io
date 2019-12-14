@@ -1,0 +1,25 @@
+.parent{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin: 20px auto;
+    background-color: blue;
+}
+
+.absolute{
+position: absolute;
+height: 40px;
+width: 40px;
+}
+.red{
+    background-color: red;
+    top: 200px;
+}
+.white{
+    background-color: white;
+    right: 50px;
+}
+.yellow{
+    background-color: yellow;
+    bottom: 10px;
+}

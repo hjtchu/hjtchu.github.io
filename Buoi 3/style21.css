@@ -1,0 +1,48 @@
+.container{
+    
+}
+.header{
+height: 100px;
+background-color: grey ;
+text-align: center;
+line-height: 100px;
+margin-bottom: 5px;
+}
+.section{
+    display: flex;
+    margin-bottom: 5px;
+}
+.sidebar1{
+    height: 500px;
+    width: 25%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+
+}
+.article{
+    height: 500px;
+    width: 50%;
+    background-color: grey;
+    text-align: center;
+    line-height: 500px;
+    margin-right: 5px;
+
+}
+.sidebar2{
+    height: 500px;
+    width: 25%;
+    background-color: grey;
+    text-align: center;
+    line-height: 500px;
+
+}
+.footer{
+    height: 100px;
+    background-color: grey ;
+    text-align: center;
+    line-height: 100px;
+
+    }
