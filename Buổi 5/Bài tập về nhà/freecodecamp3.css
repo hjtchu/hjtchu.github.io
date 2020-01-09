@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(238, 238, 238);
+    /* position: relative; */
+}
+.main{
+    background-color: rgb(238, 238, 238);
+    z-index: 1;
+
+    /* margin: 0 auto; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'left midle right';
+    position: fixed;
+    top: 0px;
+    padding-top: 20px;
+}
+  #header{
+      grid-area: left;
+      /* display: block; */
+      margin-left: 20%;
+  }
+  #nav{
+      grid-area: right;
+  }
+#nav-bar a{
+    margin-right: 25px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+#form{
+    position: relative;
+    top: 80px;
+}
+#form h3{
+    display: block;
+    text-align: center;
+}
+#email {
+    display: block;
+    margin: 0 auto 5px;
+    width: 300px;
+    height: 25px;
+    background-color: rgb(157, 153, 160);
+    /* max-width: 400px; */
+  }
+  #submit{
+      display: block;
+      margin: 0 auto;
+      width: 304px;
+      height: 25px;
+      background-color: rgb(134, 195, 197);
+      color: green;
+      font-size: 15px;
+      font-weight: bolder;
+      text-transform: uppercase;
+  }
+#content{
+    position: absolute;
+    /* margin: 250px auto 100px; */
+    top: 250px;
+    left: 150px;
+    right: 150px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+ }
+
+#picture_logo1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+ }
+#picture_logo2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    height: 100%;
+
+}
+#picture_logo3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 100%;
+
+}
+iframe{
+    width:853px;
+     height:480px;
+     position: relative;
+     top: 450px;
+     left:250px;
+     right: 250px;
+     display: block;
+}

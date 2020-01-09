@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(190, 190, 190);
+}
+
+.title {
+    text-align: center;
+    line-height: 40px;
+}
+.img-div{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+ }
+ #image{
+text-align: center;    
+}
+img{
+    scale: 1.2;
+}
+#img-caption{
+    display: block;
+    padding-bottom: 20px;
+}
+#tribute-info h3{
+    text-align: center;
+}
+ul{
+    display:block;
+    margin: 20px 200px;
+}
+#tribute-info p{
+    display: block;
+    margin: 20px 200px;
+    text-align: justify;
+}
+.footer{
+    text-align: center;
+}

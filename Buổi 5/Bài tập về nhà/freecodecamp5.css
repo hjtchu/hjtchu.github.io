@@ -1,0 +1,50 @@
+body{
+    display: flex;    
+    position: relative;
+}
+#navbar{
+    border: 1px  ;
+    margin-right: 5px;
+    padding-right: 15px;
+    width: 300px;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+main{
+    background-color: white;
+    border: 1px  ;
+    margin-left: 355px;
+    padding-left: 15px;
+}
+#main-doc code{
+    display: block;
+    background-color: #dfd5d5;
+    line-height: 2;
+     
+    border-radius: 5px;
+    font-weight: bold;
+}
+#navbar{
+    font-size: 1.3em;
+}
+#navbar>ul{
+    list-style: none;
+    width: 110%;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar>ul>li{
+    border: 1px solid black;
+    width: 100%;
+    line-height: 40px;
+    margin-left:  0px;
+    margin-right: 0px;
+}
+#navbar>ul>li>a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}

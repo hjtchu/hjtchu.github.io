@@ -1,0 +1,46 @@
+#main{
+    background-color: darkolivegreen;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.title .content {
+    max-width: 100%;
+}
+#title{
+    text-align: center;
+}
+.title h3{
+    text-align: center;
+}
+#survey-form{
+    display: block;
+    max-width: 50%;
+    margin: 10px auto;
+    background-color: rgb(193, 193, 216);
+    border-radius: 5%;
+}
+ .label-form{
+     display: block;
+     width: 100%;
+     /* text-align: center; */
+ }
+ #name   {
+     width: 80%;
+  }
+  #email{
+      width: 80%;
+  }
+  #age{
+    width: 80%;
+  }
+  #currentJob{
+      width: 80%;
+  }
+    .label-form{
+        margin: 0 auto;
+       padding-bottom:   15px  ;
+  }
+  .label-form input{
+      margin-top: 5px;
+  }

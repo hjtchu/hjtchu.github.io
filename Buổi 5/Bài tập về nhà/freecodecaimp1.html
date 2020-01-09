@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="freecodecaimp1.css">
+</head>
+<body>
+    <div id="main">
+        <div class="title">
+            <h1 id="title">freeCodeCamp Survey form</h1>
+            <h3><i>Thank you for taking the time to help us improve the platform
+            </i></h3>
+        </div>
+        <div class="content">
+            <form action="submit-form" id="survey-form">
+                <!-- <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label> -->
+
+                <label for="name" id="name-label" class="label-form">
+                    <div>Name</div>
+                    <input id="name" type="text" placeholder="Enter your name" name="personInfo"  required>
+                </label>
+                <label for="email" id="email-label" class="label-form">
+                    <div>Email</div>
+                    <input id="email" type="email" placeholder="email" name="personInfo" required>
+                </label>
+                <label for="age" id="age-label" class="label-form">
+                    <div>Age (optional)</div>
+                    <input id="age" type="number" placeholder="Age" name="personInfo" value="age" max="100">
+                </label>
+                <label for="currentJob" id="dropdown" class="label-form">
+                    <div>
+                        Nghề nghiệp hiện tại của bạn?
+                    </div>
+                    <select name="currentJob" id="currentJob" required>
+                        <option value="hs">Học sinh</option>
+                        <option value="sv">Sinh viên</option>
+                        <option value="tn">Thất nghiệp</option>
+                        <option value="dl">Đi làm</option>
+                    </select>
+                </label>
+                <label for="chosenRadio" id="chosenRadio" class="label-form">
+                    <div>Bạn có sẵn sàng giới thiệu người thân không?</div>
+                    <input id="yes" type="radio" name="yes-no" value="yes">Offcourse!<br>
+                    <input type="radio" id="no" name="yes-no" value="no" >No!No!no!<br>
+                    <input type="radio" id="notsure" name="yes-no" value="notsure" checked>Not Sure! <br>
+                </label>
+                <label for="checkbox" id="checkbox" class="label-form">
+                    <div>What would you like to see improved? (Check all that apply)</div>
+                    <input type="checkbox" name="check-1-all"value="yes" id="checkYes">Yes <br>
+                    <input type="checkbox" name="check-1-all" id="checkNo">No <br>
+                    <input type="checkbox" name="check-1-all" value="notsure" id="checkNotsure">Not Sure! <br>
+                </label>
+                <label for="comment-area" id="comment-area" class="label-form">
+                    <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="comment here"></textarea>
+                </label><br>
+                <label for="submit" class="label-form">
+                    <input type="submit" name="submit" id="submit" value="Confirm">
+                </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
