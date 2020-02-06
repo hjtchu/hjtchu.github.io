@@ -1,0 +1,20 @@
+table, th, td{
+    border: 1px solid blue;
+}
+table, .search{
+    width: 100%;
+}
+th{
+color: blue;
+
+}
+td{
+    color: coral;
+}
+.search{
+    height: 10vh;
+    color: crimson;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
