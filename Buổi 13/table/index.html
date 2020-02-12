@@ -8,22 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="search-input" class="search" type="text">
+    <h3 style="display: inline-block">Tìm kiếm</h3>
+    <input type="search" id="search-input" type="text">
     <table class="table table-striped">
         <thead>
-            <th>
-                FirstName
-            </th>
-            <th>
-                LastName
-            </th>
-            <th>
-                Email
-            </th>
+            <th data-column ="First name" data-order ="desc">FirstName &#9650</th>
+            <th data-column ="Last name" data-order ="desc">LastName &#9650</th>
+            <th data-column ="Email" data-order ="desc">Email &#9650</th>
         </thead>
-        <tbody class="myTable">
+        <tbody id="myTable">
 
         </tbody>
     </table>
-</body>
+    <script src="main.js"></script>
+ </body>
 </html>

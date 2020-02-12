@@ -1,0 +1,324 @@
+/* varialbes */
+:root{
+    --primary: #ffc636;
+    --secondary: rgb(78, 78, 109);
+
+}
+
+/* reset */
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/* base style */
+*{
+    box-sizing: border-box;
+}
+body{
+    background: var(--secondary);
+    overflow-x: hidden;
+    font-family: 'font moi';
+}
+#welcome{
+    background-color: #0a0b5b;
+}
+.welcome-text p{
+    padding-bottom: 20px;
+}
+.button{
+    background: none;
+    border: var(--primary) 2px solid;
+    color: var(--primary);
+    padding: 6px 12px;
+     border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: aqua;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    color: black;
+
+}
+
+input, textarea{
+    border: 2px solid;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* font */
+@font-face{
+    font-family: 'font moi';
+    src: url(/assets/static/Muli-ExtraLightItalic.ttf);
+}
+h1, h2, h3, h4{
+    color: #a4a5bd;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+p, a, li{
+    color: rgb(161, 141, 141);
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+h1, h3{
+    font-size: 1.4em;
+}
+
+
+#porfolio h3{
+    text-align: center;
+}
+ /* .projects{
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: 10px;
+ }
+ .projects a{
+     text-align: center;
+ }
+.projects a:nth-child(1){
+    grid-column: 2/6;
+}
+.projects a:nth-child(2){
+    grid-column: 8/12;
+}
+
+.projects a:nth-child(3){
+    grid-column: 5/9;
+} */
+
+/* mobile style */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 10px;
+}
+
+.site-nav{
+    margin: 0 20px;
+}
+.site-nav ul{
+    display: none;
+}
+.site-nav h1{
+    grid-column: 1/4;
+    /* padding-bottom: 10px; */
+    border: 2px solid coral;
+    line-height: 42px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 200px;
+    
+ }
+#welcome{
+    padding: 20px;
+}
+
+.welcome-text{
+    grid-column: 1/6;
+}
+.welcome-img{
+   grid-column: 6/9; 
+}
+.welcome-img img{
+    width: 100%;
+}
+.welcome-text a{
+    margin:  20px 0;
+}
+
+#porfolio{
+    background: url(/assets/square_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    padding: 30px 20px;
+}
+
+#porfolio h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* .projects img{
+    width: 100%;
+} */
+
+.projects a{
+    grid-column: 1/9;
+    display: flex;
+}
+
+.projects a *{
+    align-self: center;
+    margin: 0 20px;
+    width: 40%;
+}
+
+#skills{
+    padding: 30px 20px;
+    background-color: #07083e;
+
+}
+#skills h3{
+    text-align: center;
+}
+#skills ul{
+    margin: 40px 0;
+}
+#skills li{
+    padding: 10px;
+    grid-column: span 4;
+    text-align: center;
+}
+#skills img{
+    height: 80px;
+    margin: 10px auto;
+}
+
+#skills p{
+
+    text-align: center;
+}
+
+#contacts{
+    padding: 30px 20px;
+    background-color: #07083e  ;
+}
+
+#contacts h3, #contacts p{
+    text-align: center;
+}
+
+form{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100px;
+}
+
+form input, form textarea, form button{
+    width: 200%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.button{
+    margin-top: 10px;
+}
+
+footer .copyright{
+    grid-column: 1/5;
+}
+.social{
+    grid-column: 7/9;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.social img{
+    width: 100%;
+}
+.social li{
+    margin-right: 10px;
+}
+footer{
+    padding: 30px 20px;
+    background-image: url('/assets/footer_image.png');
+    background-size: 50%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #14153d;
+}
+/* small tablet */
+ @media screen and (min-width: 620px){
+     body{
+         font-size: 17px;
+      }
+     .site-nav ul{
+         display: flex;
+         grid-column: 6/8;
+     }
+     .site-nav>ul li{
+         margin-right: 10px;
+         margin-top: 20px;
+     }
+     form{
+         max-width: 100%;
+      }
+     form input, form textarea, form button{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+ }
+ 
+/* large tablet & laptop */
+@media screen and (min-width: 960px){
+    body{
+        font-size: 18px;
+    }
+    .site-nav ul{
+        grid-column: 7/9;
+        justify-content: space-between;
+    }
+    .site-nav>ul li{
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    form{
+        max-width: 100%;
+     }
+    form input, form textarea, form button{
+       width: 60%;
+       margin-bottom: 10px;
+   }
+ 
+    .projects a:nth-child(1){
+        grid-column: 2/5;
+    }
+    .projects a:nth-child(2){
+        grid-column: 6/9;
+
+    }
+    .projects a:nth-child(3){
+        grid-column: 4/7;
+    }
+    #skills li{
+        padding: 10px;
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+ 
+/* desktop */
+ @media screen and (min-width: 1200px){
+     body{
+         font-size: 20px;
+     }
+     .site-nav ul{
+        grid-column: 7/9;
+        justify-content: space-between;
+    }
+    .site-nav>ul li{
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    form{
+        max-width: 100%;
+     }
+    form input, form textarea, form button{
+       width: 60%;
+       margin-bottom: 10px;
+   }
+}
+ }

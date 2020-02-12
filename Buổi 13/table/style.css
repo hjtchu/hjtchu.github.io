@@ -1,7 +1,7 @@
 table, th, td{
     border: 1px solid blue;
 }
-table, .search{
+table, #search-input{
     width: 100%;
 }
 th{
@@ -17,4 +17,10 @@ td{
     margin: 0;
     padding: 0;
     font-size: 100%;
+}
+tbody>tr:nth-child(even){
+    background: chartreuse;
+}
+tbody>tr:nth-child(odd){
+    background: cyan;
 }
