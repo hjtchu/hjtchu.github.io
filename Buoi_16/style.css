@@ -1,0 +1,292 @@
+/*main style*/
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*navbar style*/
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.main-nav .logo{
+    width: 110px;
+}
+  .main-nav> i{
+    display: none;
+}
+.main-nav>a{
+
+    display: flex;
+
+}
+
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li{
+    padding: 0 10px
+}
+
+ 
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: solid 2px #262626;
+}
+
+.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+.showcase{
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/showcase.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+
+}
+
+.showcase h2, .showcase p{
+    margin-bottom: 10px;
+}
+
+.showcase .btn{
+    /* display: inline-block; */
+    /* background-color: tomato; */
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.showcase .button-learnmore{
+    background-color: rgb(75, 72, 72);
+    line-height: 30px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+     
+
+/*home-cards*/
+
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.home-cards>div img{
+    display: block;
+}
+.home-cards>div>img:hover{
+    scale: 0.5;
+    opacity: 0.7;
+}
+
+.home-cards h3{
+    margin-bottom: 10px;
+}
+
+.home-cards a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards p{
+    word-break: break-all;
+}
+.btn i{
+    transition: all 0.3s;
+ }
+.btn:hover i{
+    margin-left: 5px;
+    opacity: 0.8;
+}
+
+.xbox{
+    height: 300px;
+    width: 100%;
+    background-image: url('assets/xbox.jpg');
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 20px;
+ 
+}
+.overlay{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+
+ 
+ .overlay .btn{
+     display: inline-block;
+     background-color: #262626;
+     color: white;
+     /* flex: 1; */
+     text-transform: uppercase;
+     margin-top: 20px;
+
+ }
+
+ .overlay>*{
+     margin-left: 20px;
+ }
+
+ .overlay h2{
+     padding-top: 10%;
+     padding-bottom: 10px;
+    }
+
+    .footer{
+    background-image: url('/assets/carbon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    /* padding-top: 20px; */
+  }
+    .footer>h2, .footer>p, .footer>a{
+    margin: 20px auto;
+    color: white;
+    z-index: 11;
+}
+
+    .footer>h2{
+        margin-top: 50px;
+    }
+    .footer .opcityblack{
+        position: absolute;
+        background-color: black;
+       
+        width: 100%;
+        height: 350px;
+        opacity: 0.5;
+        
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px auto ;
+        padding: 0;
+    }
+    .social img{
+        display: block;
+    }
+    .social img{
+        margin-left: 10px;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        background-color: rgb(196, 187, 187);
+        font-size: 0.8em;
+         
+     }
+     .about ul{
+         margin: 20px 20px;
+          
+     }
+     .about>ul li{
+         line-height: 2;
+     }
+
+  
+/*tablet*/
+     @media screen and (max-width: 700px){
+        #clickmenu{
+            display: block;
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+        #main-menu1{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -500px;
+            padding-top: 40px;
+            padding-left: 20px;
+            height: 100%;
+            width: 50%;
+            background-color: #f2f2f2;
+            border: solid 1px #ccc;
+            opacity: 0.8;
+            /* transition: left 1s; */
+            /* transform: translate(-500px); */
+        }
+      
+         
+
+     }
+
+     @media screen and (max-width: 480px){
+
+     }

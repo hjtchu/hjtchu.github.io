@@ -1,0 +1,34 @@
+ 
+   
+.container{
+    max-width: 1200px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: teal;
+}
+
+ .nav-bar{
+     display: flex;
+     width: 100%;
+     /* justify-content: space-between; */
+     background-color: white;
+     margin-bottom: 20px;
+ }
+
+ .nav-bar .search-box{
+     margin-left: 20px;
+     display: inline-block;
+     width: 50%;
+ }
+ .nav-bar .cart{
+     margin-left: 20px;
+ }
+
+ .menu>ul>li>ul  {
+     display: none;
+ }
+
+ .menu>ul>li>a:hover .menu>ul>li ul{
+     display: block;
+ }
