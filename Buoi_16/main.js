@@ -17,7 +17,6 @@ function showNone(){
 }
 
 
- 
  function clickFunction() {
   if(clickAction.dataset.order =='block'){
     clickAction.dataset.order ='none';
