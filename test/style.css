@@ -1,0 +1,27 @@
+.container{
+    width: 1120px;
+    margin: 0 auto;
+     height: 70vh;
+    background-image: linear-gradient(to right,#ec2886,#a728a1,#8028b1);
+    overflow: hidden;
+    position: relative;
+}
+.child{
+    width: 400px;
+    height: 200px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 100%;
+    transition: all;
+    transition-duration: 1s;
+}
+.con{
+    width:1120px;
+    height: 600px;
+    background-color: crimson;
+}
+ 
+.container:hover .child{
+    top: 0;
+    left: 0;
+}
