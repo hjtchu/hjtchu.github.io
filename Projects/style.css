@@ -139,4 +139,144 @@ body{
 
 /*notice section*/
 
-.viewmore
+.vỉewmore{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.notice{
+    width: 1120px;
+    height: 400px;
+    display: flex;
+    background-color: var(--sectionbgc);
+
+}
+
+.notice-left{
+    height: 400px;
+    width: 500px;
+    margin-right: 40px;
+}
+
+.notice-left h3{
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.notice-left h4{
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.notice-left a{
+    margin: 40px auto 0 ;
+}
+
+.notice-right{
+    width: 400px;
+    height: 240px;
+    margin: 40px auto;
+    background-color: #C4C4C4;
+ }
+
+
+.tracking{
+    width: 400px;
+    background-color: #C4C4C4;
+    border: 1px solid;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+ .tracking-content{
+     width: 400px;
+     height: 200px;
+     border: 1px solid;
+ }
+
+
+ #trackingId, .tracking-content a{
+     display: block;
+     width: 250px;
+     height: 40px;
+     margin: 20px auto;
+     text-align: center;
+ }
+
+ /*products section*/
+ .product{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 60px 60px 200px;
+     gap: 10px;
+     width: 1120px;
+     height: 400px;
+     background-color: var(--sectionbgc);
+     padding-top: 20px;
+ }
+ .product h3{
+     text-transform: uppercase;
+     grid-column: 1/4;
+     text-align: center;
+     display: block;
+     height: 40px;
+     align-self: center;
+     margin: 0;
+   }
+  .productName{
+      display: inline-block;
+      text-transform: uppercase;
+      height: 60px;
+      text-align: center;
+      align-self: center;
+      width: 300px;
+      background-color: #C4C4C4;
+      line-height: 60px;
+      margin: 0 auto;
+      position: relative;
+       overflow: hidden;
+   }
+   .productName:hover img{
+    left: -50px;
+   }
+   .productName img{
+       position: absolute;
+       top: 0;
+       left: -350px;
+        z-index: 0;
+       transition: all;
+       transition-duration: 1s;
+   }
+   .productName p{
+       position: absolute;
+       z-index: 1;
+       height: 60px;
+       width: 300px;
+       left: 0;
+       line-height: 60px;
+       display: inline-block;
+       margin: 0 auto;
+   }
+
+
+  .productContent{
+      height: 220px;
+      text-align: center;
+      background-color: white;
+      width: 300px;
+      margin: 0 auto;
+  }
+  .productContent a{
+      margin: 0 auto 10px;
+      line-height: 40px;
+  }
+  .productContent p {
+      margin-bottom: 40px ;
+  }
+  .productContent h5{
+      margin: 10px auto;
+  }
