@@ -18,6 +18,8 @@ function startSlider(){
 function sliderLeft(){
     reset();
     sliderImages[current -1].style.display = 'block';
+    // sliderImages[current - 1].style.transition = 'all';
+    // sliderImages[current - 1].style.transition-duration = '1s'
     current--;
 
 }
@@ -25,6 +27,8 @@ function sliderLeft(){
 function sliderRight(){
     reset();
     sliderImages[current + 1].style.display = 'block';
+    // sliderImages[current + 1].style.transition = 'all';
+    // sliderImages[current + 1].style.transition-duration = '1s'
     current++;
 
 }

@@ -1,0 +1,46 @@
+.footer{
+    margin: 20px 40px 0;
+    background-image: url("/favicon/footer2.png");
+    // width: 100%;
+    height: 574.65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 50px;
+
+    h3{
+        grid-column: 1/5;
+        text-align: center;
+        margin-top: 20px;
+        height: 50px;
+    }
+    .register{
+        grid-column: 1/5;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+        .registerEmail{
+            width: 450px;
+            height: 40px;
+            padding-left: 20px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            outline: none;
+            border:   transparent;
+            background-color: #E1CCAC;
+        }
+        .registerSubmit{
+            width: 170px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+             background-color:#F29E2B ;
+             border-top-right-radius: 50px;
+             border-bottom-right-radius: 50px;
+        }
+        
+    }
+
+
+}

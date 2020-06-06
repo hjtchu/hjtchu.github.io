@@ -239,9 +239,15 @@ body{
       margin: 0 auto;
       position: relative;
        overflow: hidden;
+     
    }
    .productName:hover img{
     left: -50px;
+    box-shadow: blue;
+   }
+
+   .productName:hover{
+    box-shadow: 5px 5px 5px blue;
    }
    .productName img{
        position: absolute;
@@ -279,4 +285,94 @@ body{
   }
   .productContent h5{
       margin: 10px auto;
+  }
+
+  /*about section*/
+
+  .about{
+      background-image: url(./Assets/about-section\ 1120x420.jpg);
+      width: 1120px;
+      height: 420px;
+       background-repeat: no-repeat;
+       background-position: center;
+     
+  }
+
+  .opacity{
+      width: 1120px;
+      height: 420px;
+      background-image: linear-gradient(to left, #1F2FEA, #E3C0B3, #F79E7D);
+      opacity: 0.6;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: 150px 100px 50px 50px;
+      text-align: center;
+  }
+  .opacity h3{
+      grid-column: 1/6;
+      display: inline-block;
+      margin-top: 40px;
+  }
+  .opacity i{
+      
+      font-size: 60px;
+      color: black;
+     
+  }
+
+  .opacity i:hover{
+      color:  white;
+  }
+
+  /*partner section*/
+  .partner{
+    width: 1120px;
+    height: 102px;
+  display: flex;
+  align-items: center;
+}
+
+  .partnerparent{
+      position: relative;
+      width: 1012px;
+      height: 102px;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+
+  .partner-img{
+      height: 100px;
+       margin: 0 auto;
+      transition: all;
+      transition-duration: 1s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+   }
+  .partner img{
+      display: inline-block;
+      border:  1px solid;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      border-radius: 15px;
+
+  }
+  .partner .fas{
+      font-size: 70px;
+       color: indigo;
+      background-color: var(--buttonColor);
+      cursor: pointer;
+   }
+  .fa-chevron-left{
+    margin-left: 00px;
+  }
+  .fa-chevron-right{
+      margin-right: 00px;
+  }
+
+  .partner i:hover{
+      box-shadow: 0px 0px 50px 5px;
   }
