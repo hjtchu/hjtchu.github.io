@@ -16,11 +16,20 @@
         <input type="text" name="title" id="">
         <button type="submit">Creat new todo</button>
     </form>
-
-    <%for(let i = 0; i < result.length; i++){ %>
-        <p><%= result[i] %></p>
-         
-   <% } %>
+<div class="container" style="display: flex;">
+    <div class="div1" style="display: inline-block;">
+        <%for(let i = 0; i < result.length; i++){ %>
+            <div style="height: 19px; border: solid 1px black;"><%= result[i].title %></div>
+       <% } %>
+    </div>
+    <div class="div2" style="display: inline-block; display: flex; flex-direction: column; width: 100px;">
+        <%for(let i = 0; i < result.length; i++){ %>
+            <button action="delete">Delete</button>
+        <% } %>
+    </div>
+</div>
+    
+   
 
 </body>
 </html>

@@ -34,32 +34,27 @@ app.get("/about", function(req,res){
 })
 
 
-let quotes = ["code html", "style css", "push code to github"]
-
+ 
 app.get("/todo", function(request,response){
 
-    let todoList = dbase.collection("newtodo").find().toArray().then(results => {console.log(results)}).catch(error =>{console.log(error)})
-
-
-    // console.log(__dirname);
-
-   
-
-    response.render("index.ejs", {result: quotes})
-
+    dbase.collection("newtodo").find().toArray().then(result => {
+        response.render("index.ejs", {result: result}), console.log(result)
+    }).catch(error =>{console.log(error)})   
+    
+    // console.log(result)
     // res.sendFile(__dirname + "/index.html")
 })
 
 
 
-app.post("/newtodo", function(req,res){
-   console.log("received", req.body)
+// app.post("/newtodo", function(req,res){
+//    console.log("received", req.body)
 
-    dbase.collection("newtodo").insertOne(req.body).then(results => {console.log(results)}).catch(error =>{console.log(error)})
+//     dbase.collection("newtodo").insertOne(req.body).then(result => {console.log(result)}).catch(error =>{console.log(error)})
 
-    // let newtodo = req.body.title
-    // quotes.push(newtodo)
-})
+//     let newtodo = req.body.title
+//     result.push(newtodo)
+// })
 
 app.listen(3000, function(){
     console.log("Hello World abcd")
