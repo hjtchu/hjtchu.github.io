@@ -71,7 +71,29 @@ h1 span:nth-child(4){
 h1 span:nth-child(5){
     animation-delay: 2.75s;
 }
+h1 span:nth-child(6){
+    animation-delay: 3s;
+}
+h1 span:nth-child(7){
+    animation-delay: 3.25s;
+}
+h1 span:nth-child(8){
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(9){
+    animation-delay: 4s;
+}
+h1 span:nth-child(10){
+    animation-delay: 4.25s;
+}
+h1 span:nth-child(11){
+    animation-delay: 4.5s;
+}
 
+span{
+    margin-right: 20px;
+    font-weight: 900;
+}
 section::before
 {
     content: "";

@@ -1,61 +1,72 @@
 .header {
-  height: 70px;
+  background-color: #00909e;
   display: flex;
-  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  justify-content: center; }
+  .header .search-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 12px;
+    background-color: #142850; }
+    .header .search-box input {
+      border: none; }
+    .header .search-box .search-btn {
+      float: right;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header .search-box .search-txt {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      color: #00909e;
+      transition: 0.5s;
+      line-height: 100%;
+      width: 0px;
+      font-size: 16px;
+      padding: 0; }
+  .header .search-box:hover > .search-txt {
+    width: 250px;
+    padding: 0 6px; }
+
+nav {
+  position: relative;
+  height: 100%;
+  display: flex;
   align-items: center; }
-  .header a {
-    display: inline-block;
-    border-bottom: solid 2px transparent; }
-  .header a:nth-child(6) {
-    margin-left: 300px; }
-  .header img {
-    height: 50px; }
-  .header a:hover {
-    color: #CE1247;
-    border-bottom: solid 2px #CE1247; }
-
-.banner img {
-  width: 100%; }
-
-.service {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .service .serviceBox {
-    width: 256px; }
-    .service .serviceBox * {
-      margin-bottom: 25px;
-      text-align: center; }
-
-.feature {
-  text-align: center;
-  padding-top: 45px; }
-  .feature h1 {
-    margin-top: 0; }
-  .feature * {
-    margin-bottom: 25px; }
-  .feature img {
-    height: 60px; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+  nav #marker {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #142850;
+    bottom: 0;
+    transition: 0.5s;
+    border-radius: 5px; }
+  nav a {
+    position: relative;
+    margin: auto 20px;
+    font-size: 0.8em;
+    color: #142850;
+    line-height: 100%;
+    text-align: center; }
 
 body {
   font-family: 'Muli', sans-serif;
-  font-size: 18px;
-  margin: 0 40px; }
+  font-size: 16px;
+  margin: 0 40px;
+  padding: 0; }
+  body a {
+    text-decoration: none; }
 
-a {
-  text-decoration: none;
-  color: black; }
-
-h1 {
-  text-transform: uppercase;
-  color: #CE1247;
-  text-align: center;
-  margin-top: 40px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */
