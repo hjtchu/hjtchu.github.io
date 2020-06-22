@@ -72,7 +72,7 @@ h1 span:nth-child(5){
     animation-delay: 2.75s;
 }
 
-section::before
+section:before
 {
     content: "";
     position: absolute;

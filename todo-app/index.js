@@ -1,8 +1,17 @@
 const express = require('express');
 const bodyParser = require("body-parser");
-const { MongoClient } = require('mongodb');
+// const { MongoClient } = require('mongodb');
 
-const mongoClient = require("mongodb").MongoClient
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://hjtchu:<bibichanthoi1>@cluster0-b9yby.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
 
 const app = express();
 
