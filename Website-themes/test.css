@@ -1,0 +1,16 @@
+.div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+
+.div::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
